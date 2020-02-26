@@ -1,0 +1,502 @@
+/* Общие правила */
+body{
+    background: url(img/mainpic.png) repeat;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    padding-top: 250px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+ 
+}
+
+p{
+    color: #333333;
+}
+
+hr{
+    border: 1px solid black;
+    margin: 0;
+}
+
+@keyframes jumpnow{
+    from{transform: translate(0,0)}
+    25%{transform: translate(0,-5px)}
+    50%{transform: translate(0,0)}
+    75%{transform: translate(0,-5px)}
+    to{transform: translate(0,0)}
+}
+@keyframes jump{
+    from{transform: translate(0,10px)}
+    50%{transform: translate(0, 5px)}
+    to{transform: translate(0,10px)}
+}
+
+#active {
+    color: #ffffff;
+}
+
+#main-block{
+    width: 1024px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+/* Для окна навигации */
+nav{
+    height: 70px;
+    background-color: #F42C04;
+}
+
+.logo{
+    width: 120px;
+    height: 70px;
+    float: left;
+}
+
+.logo>a>img:hover{
+    transform: rotate(1080deg);
+    transition: 2s;
+}
+
+.links-block{
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Реализации многоуровневого меню */
+.links-windows{
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+.links-windows a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    margin-right: 25px; 
+    font-family: 'Roboto Slab', serif;
+    display: inline-block;
+}
+
+.links-windows a:hover{
+    animation: jumpnow 0.55s ease-out;
+    animation-iteration-count: 1;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.second-menu-block{
+    background-color: #F42C04;
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    padding-top: 10px;
+    display: none;
+}
+
+.links-windows:hover .second-menu-block{
+    display: block;
+    transition: 0.4s;
+}
+/* End */
+
+
+/* Блок с большой картинкой */
+.picture-block{
+    height: 650px;
+    background: url(img/mbcar.jpg);
+    background-size: cover;
+}
+
+.img-center-button{
+    width: 250px;
+    font-family: 'Roboto Slab', serif;
+}
+.img-center-button a{
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: 26px;
+    color: #000000;
+    text-align: center;
+    padding-top: 8px;
+    display:block;
+    width: 250px;
+    height: 40px;
+    margin-left: 370px;
+    border-left: 3px solid #F42C04;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.img-center-button a:hover{
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    transition: 0.3s;
+}
+
+.social-img{
+    /* background-color: black; */
+    position: relative;
+    margin: 0 auto;
+    left: 360px;
+    top: 190px;
+    width: 290px;
+    height: 60px;
+    text-align: center;
+}
+.social-img a{
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 0 0 #333;
+    display: inline-block;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.social-img a:hover{
+    transform: translate(1px, 2px);
+}
+
+.social-img img{
+    width: 53px;
+    height: 53px;
+    top: -3px;
+    left: -3px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.social-img img:hover{
+    filter: brightness(10%);
+    filter: grayscale(.75);
+}
+
+/* Главный контентный блок */
+
+/* Блок с заголовком статьи */
+.name-block{
+    height: 70px;
+    background-color: #F42C04;
+    text-align: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.name-block h2{
+    margin: 0;
+    padding-top: 20px;
+    font-size: 30px;
+    color: #ffffff;
+}
+/* Конец блока заголовка */
+
+main{
+    margin-bottom: 5px;
+    min-height: 1000px;
+
+}
+
+/* Блок с текстом */
+.content-block{
+    text-align: left;
+}
+
+.content-block h3{
+    text-align: center;
+    font-size: 24px;
+    /* margin-top: 15px; */
+}
+
+/* Выравнивание для блоков в главном контенте */
+.state-block{
+    min-height: 400px;
+    margin: 25px 0;
+}
+
+/* Выравнивания в зависимости от положения текст-картинка */
+.text-left-block{
+    width: 600px;
+    margin-left: 20px;
+    float: left;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+}
+.img-to-text-right{
+    width: 370px;
+    margin-right: 20px;
+    margin-left: 10px;
+    float: right;
+}
+
+.text-right-block{
+    width: 600px;
+    margin-right: 20px;
+    float: right;
+    text-align: justify;
+    font-family: 'Nunito', sans-serif;
+}
+.img-to-text-left{
+    width: 370px;
+    margin-left: 20px;
+    margin-right: 10px;
+    float: left;
+}
+
+/* 6 нижних блоков на флексе */
+.more-info-block{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.blocks-inside-info:hover {
+    /* transform: scale(1.2,1.2); */
+    background-color: #F42C04;
+    
+}
+
+.blocks-inside-info{
+    transition: 0.35s;
+    width: 337px;
+    height: 300px;
+    border: 2px solid black;
+    border-collapse: separate;
+    text-align: center;
+    outline-width: 2px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.blocks-inside-info hr{
+    width: 45px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.blocks-inside-info p{
+    font-size: 20px;
+    color: #333333;
+}
+.blocks-inside-info img{
+    width: 150px;
+    height: 150px;
+}
+
+/* Подвал */
+footer{
+    min-height: 150px;
+    background-color: #F42C04;
+    padding-bottom: 10px;
+    border-top: 1px solid #000000;
+}
+
+footer p{
+    color: #ffffff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.foot-inside{
+    margin: 0 30px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.own-style{
+    font-size: 20px;
+    color: #f0f02c;
+}
+.flex-inside-footer{
+    width: 30%;
+    /* display: flex; */
+}
+.foot-inside div:nth-child(3){
+    text-align: right;
+}
+
+
+/* Немного стиля другим страницам */
+#another-content{
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.another-header-style{
+    margin: 0;
+    padding-top: 25px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+ 
+}
+
+#another-content-sec{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#another-content-sec code{
+    font-size: 25px;
+}
+
+#another-content-sec p{
+    font-size: 20px;
+}
+
+/* Modal-window */
+
+.modal-window{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.6);
+    display: none;
+}
+.modal-window-content{
+    margin: 0 auto;
+    width: 550px;
+    height: 370px;
+    border-radius: 15px 0;
+    background-color: white;
+    margin-top: 15%;
+    border: 2px solid #333333;
+    z-index: 1000;
+}
+.modal-window-content a{
+    display: block;
+    width: 30px;
+    position: relative;
+    top: -15px;
+    right: -15px;
+    float: right;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+    background-color: #F42C04;
+    color: white;
+    border: 2px solid #333333;
+    border-radius: 70px;
+}
+.modal-window-content a:hover{
+    background-color: #ffffff;
+    color: #F42C04;
+}
+/* Форма в модальном окне */
+form{
+    width: 100%;
+    /* height: 100%; */
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.special-one{
+    font-family: 'Roboto Slab', serif;
+    margin-top: 10px;
+    font-size: 26px;
+}
+form label{
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    width: 33%;
+    margin-right: 10px;
+}
+form input{
+    width: 50%; 
+    margin-top: 10px;
+    height: 28px;
+    border-radius: 10px;
+    border: 1px solid #333333;
+    font-family: 'Roboto Slab', serif;
+    outline: none;
+}
+form input:focus{
+    background-color: rgba(221, 220, 220, 0.8);
+}
+form textarea{
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #333333;
+    font-family: 'Roboto Slab', serif;
+    outline: none;
+}
+form textarea:focus{
+    background-color: rgba(221, 220, 220, 0.8);
+}
+form button{
+    width: 80%;
+    padding: 6px 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 24px;
+    border: 1px solid #333333;
+    font-family: 'Roboto Slab', serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form button:hover{
+    background-color: #F42C04;
+
+}
+
+/* Блок с вопросом */
+.question-block{
+    width: 100%;
+    min-height: 80px;
+    background-color: #F42C04;
+}
+.slider-block{
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 80px;
+    padding-left: 20px;
+    margin: 0;
+    border: 2px solid black;
+}
+.slider-block img{
+    animation: jump 0.8s infinite ease;
+}
+.show-block{
+    display: none;
+    margin: 0;
+    padding-bottom: 15px;
+    background-color: #ffffff;
+}
+.show-block a{
+    font-size: 22px;
+    text-decoration: none;
+    color: #1c2aec;
+    font-family: 'Roboto Slab', serif;
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 24px; 
+    line-height: 40px;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+.show-block a:hover{
+    background-color: lightgray;
+    border-radius: 10px;
+    border: 1px solid black;
+}

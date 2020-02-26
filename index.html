@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Main</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="animate.css">
+        <script src="wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Nunito" rel="stylesheet">
+    </head>
+    <body>
+        <div class="modal-window">
+            <div class="modal-window-content">
+                <a href="#" onclick="$('.modal-window').fadeOut(500);">X</a>
+                <h2 class="special-one">Напиши нам!</h2>
+                <form action="">
+                    <label for="FirstName">Имя</label>
+                    <input type="text" name="FirstName" placeholder="  Имя" autofocus>
+                    <label for="Surname">Фамилия</label>
+                    <input type="text" name="Surname" placeholder="  Фамилия">
+                    <label for="telNumber">Телефон</label>
+                    <input id="telephone"type="tel" name="telNumber" placeholder="  8-800-555-35-35">
+                    <label for="massage">Вопрос</label>
+                    <textarea name="massage" id="mass" cols="10" rows="4" placeholder=" Сообщение"></textarea>
+                    <button>Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+        <div id="main-block">
+            <nav>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo" width="100px" height="70px">
+                    </a>
+                </div>
+                <div class="link-block">
+                        <div class="links-windows">
+                            <a href="index.html" id="active">Главная</a>
+                        </div>
+                        <div class="links-windows">
+                            <a href="contact.html">Контакты</a>
+                            <div class="second-menu-block">
+                                <a href="#">Кто мы?</a>
+                                <hr>
+                                <a href="#">Где мы?</a>
+                            </div>
+                        </div>
+                        <div class="links-windows">
+                            <a href="help.html">Помощь</a>
+                        </div>
+                    </div>
+            </nav>
+            <hr>
+
+            <main>
+                <div class="picture-block">
+                    <!-- <img src="img/mbcar.jpg" alt="ElectroMB" width="1024px" height="650px"> -->
+                    <h1>Новые новости каждый день!</h1>
+                    <p class="img-center-button">
+                        <a href="#" id="open-modal"> Присоединяйся</a>
+                    </p>
+                    <div class="social-img">
+                        <a href="https://vk.com" target="_blank"><img src="img/vk.png" alt="VK"></a>
+                        <a href="https://facebook.com" target="_blank"><img src="img/face.png" alt="Facebook"></a>
+                        <a href="htpps://plus.google.com" target="_blank"><img src="img/google.png" alt="Google"></a>
+                    </div>
+                </div>
+
+                <div class="name-block">
+                    <h2>Новый электрокроссовер Mercedes Benz EQC 2019</h2>
+                </div>
+
+                <div class="content-block">
+                    <div class="state-block wow fadeInLeft">
+                        <h3>Сроки выхода</h3>
+                        <p class="text-left-block">
+                            Сборка новой модели будет осуществляться сразу 
+                            на двух производственных площадках: заводе Mercedes в Бремене и 
+                            совместном предприятии Beijing-Benz Automotive в Китае. Первый 
+                            обеспечит серийными машинами европейский и американский рынки, а 
+                            второй сосредоточится на выпуске версии для азиатского региона. 
+                            Пока оба завода находятся в стадии подготовки конвейерных линий, так 
+                            что продажи Мерседес-Бенц EQC 2019-2020 начнутся только в первой половине 
+                            будущего года. Новинка должна добраться и до России, но точных сроков в 
+                            местном офисе Mercedes пока не называют. Что касается цены, то о ней в 
+                            рамках презентации также ничего не говорилось, но по сведениям ряда 
+                            европейских СМИ стоимость электрокроссовера составит минимум 70 000 
+                            евро (более 5 500 000 рублей).
+                        </p>
+                        <p class="img-to-text-right">
+                            <img src="img/outMB.jpg" alt="MB" width="370px" height="220px">
+                        </p>
+                    </div>
+
+                    <div class="state-block wow fadeInRight">
+                        <h3>Технические характеристики</h3>
+                        <p class="img-to-text-left">
+                            <img src="img/inMB.jpg" alt="engine" width="370px" height="220px">
+                        </p>
+                        <p class="text-right-block">
+                            Единственная из представленных на сегодня модификация Mercedes EQC 400 4Matic 
+                            оснащается сразу двумя асинхронными электромоторами, которые позволяют реализовать
+                            полноценную систему полного привода, предполагающую наличие отдельного двигателя
+                            на каждой из осей. Распределение тяги осуществляется в интеллектуальном режиме,
+                            с постоянной коррекцией в зависимости от дорожной обстановки. Совокупная мощность
+                            электромоторов достигает 300 кВт или 408 л.с., а их совместный пиковый момент
+                            составляет 765 Нм. 
+                            При этом водителю будут доступны четыре заводских настройки вождения
+                            (Comfort, Eco, Sport и Max Range) и дана возможность самостоятельно 
+                            сконфигурировать пятую. Помогает моторам 650-килограммовая тяговая батарея 
+                            компании Accumotive, имеющая емкость 80 кВт*час.
+                        </p>
+                    </div>
+
+                    <div class="state-block wow fadeInLeft">
+                        <h3>Салон и оснащение</h3>
+                        <p class="text-left-block">
+                            Интерьер новинки исполнен в типичном для всех современных Мерседесов ключе. 
+                            Здесь нашлось место объединенным в один блок 10.25-дюймовым дисплеям панели 
+                            приборов и информационно-развлекательной системы, стильной светодиодной 
+                            подсветке контура основных элементов оформления и комфортным креслам с 
+                            боковой поддержкой. Неплохо структурирован багажный отсек, способный 
+                            «проглотить» до 500 литров груза, что для электрокара является весьма 
+                            неплохим показателем, особенно с учетом наличия массы дополнительной 
+                            электроники.
+                            Представители Mercedes в ходе премьеры неоднократно подчеркивали, 
+                            что главная особенность EQC заключается в сохранении привычного для марки 
+                            уровня комфорта и престижа, которые совершенно не пострадают от перехода на 
+                            полную электрификацию шасси.
+                        </p>
+                        <p class="img-to-text-right">
+                            <img src="img/insideMD.jpg" alt="MB" width="370px" height="220px">
+                        </p>
+                    </div>
+
+                    <div class="state-block wow fadeInRight">
+                        <h3>Дизайн кузова</h3>
+                        <p class="img-to-text-left">
+                            <img src="img/backMB.jpg" alt="engine" width="370px" height="220px">
+                        </p>
+                        <p class="text-right-block">
+                            Внешность нового Мерседес EQC выполнена в духе исходного шоу-кара, разве 
+                            что вместо передней виртуальной решетки радиатора, увешанной светодиодами,
+                            появилась решетка реальная, обрамленная хромированной полосой снизу и по 
+                            бокам, а также тонкой подсвечиваемой линией сверху. В ходе дебютного показа 
+                            модель была сразу же представлена в исполнении AMG Line, предусматривающем 
+                            наличие особых колесных дисков, более стильных бамперов и фальшрадиатора с 
+                            двумя ярко выраженными центральными планками.
+                            Длина показанной в Стокгольме модификации EQC 400 4Matic составляет 4761 мм, 
+                            ширина укладывается в пределы 1884 мм, а высота ограничена отметкой 1624 мм. 
+                            Колесная база электрического кроссовера не превышает 2873 мм. Снаряженная масса 
+                            машины достигает внушительной цифры в 2425 килограмм.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <p class="slider-block">
+                        Посмотреть другие статьи <img src="img/downArrow.png" alt="" width="25px" height="25px">
+                    </p>
+                    <p class="show-block">
+                        <a href="#">Электронные системы Mercedes-Benz!</a>
+                        <a href="#">Модельный ряд Mercedes 2018</a>
+                        <a href="#">Характеристики обнавленного G-класса</a>
+                        <a href="#">Отзыв автомобилей E-класса</a>
+                        <a href="#">Как вас обманывают в сервисах!</a>
+                    </p>
+                </div>
+                
+                <div class="question-block">
+                    <p class="slider-block">
+                        Популярные статьи прошлого года
+                        <img src="img/downArrow.png" alt="" width="25px" height="25px">
+                    </p>
+                    <p class="show-block">
+                        <a href="#">Электронные системы Mercedes-Benz!</a>
+                        <a href="#">Модельный ряд Mercedes 2018</a>
+                        <a href="#">Характеристики обнавленного G-класса</a>
+                        <a href="#">Отзыв автомобилей E-класса</a>
+                        <a href="#">Как вас обманывают в сервисах!</a>
+                    </p>
+                </div>
+                
+                <div class="question-block">
+                    <p class="slider-block">
+                        Самые популярные статьи <img src="img/downArrow.png" alt="" width="25px" height="25px">
+                    </p>
+                    <p class="show-block">
+                        <a href="#">Электронные системы Mercedes-Benz!</a>
+                        <a href="#">Модельный ряд Mercedes 2018</a>
+                        <a href="#">Характеристики обнавленного G-класса</a>
+                        <a href="#">Отзыв автомобилей E-класса</a>
+                        <a href="#">Как вас обманывают в сервисах!</a>
+                    </p>
+                </div>
+                
+                <div class="more-info-block">
+                    <div class="blocks-inside-info wow rotateInDownLeft">
+                        <img src="img/pict/help.png" alt="pictone">
+                        <h3>Консультация</h3>
+                        <hr>
+                        <p>Бесплатная консультация нашего специалиста</p>
+                    </div>
+                    <div class="blocks-inside-info wow slideInDown">
+                        <img src="img/pict/buy.png" alt="pictwo">
+                        <h3>Выкуп авто</h3>
+                        <hr>
+                        <p>Выкупаем старые авто и даем скидки на новые!</p>
+                    </div>
+                    <div class="blocks-inside-info wow rotateInDownRight">
+                        <img src="img/pict/parts.png" alt="picthree">
+                        <h3>Запчасти</h3>
+                        <hr>
+                        <p>В наличие всегда есть запчасти на все модели MB</p>
+                    </div>
+                    <div class="blocks-inside-info wow rotateInUpLeft">
+                        <img src="img/pict/service.png" alt="picfour">
+                        <h3>Сервис</h3>
+                        <hr>
+                        <p>При покупке запчастей у нас, замена с 50% скидкой!</p>
+                    </div>
+                    <div class="blocks-inside-info wow slideInUp">
+                        <img src="img/pict/wash.png" alt="pictfive">
+                        <h3>Мойка авто</h3>
+                        <hr>
+                        <p>При ремонте, Вы получаете мойку в подарок!</p>
+                    </div>
+                    <div class="blocks-inside-info wow rotateInUpRight">
+                        <img src="img/pict/paint.png" alt="pictsix">
+                        <h3>Покраска авто</h3>
+                        <hr>
+                        <p>У нас Вы также можете обновить ЛКП своего авто.</p>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <div class="foot-inside">
+                    <div class="flex-inside-footer">
+                        <p class="own-style">
+                            Информация для связи:
+                        </p>
+                        <p class="own-style">
+                            Тел. 8-800-555-35-35 
+                        </p>
+                        <p>
+                            mail: <a href="tomail:info@website.ru"><u>info@website.ru</u></a>
+                        </p>
+                        <p>
+                            Время работы: пн-пт 10:00 - 20:00
+                        </p>
+                    </div>
+                    <div class="flex-inside-footer">
+                        <img src="img/logofoot.png" alt="LogoCenter" width="350px" height="195px">
+                    </div>
+                    <div class="flex-inside-footer">
+                        <p>Сертифицированный сервис</p>
+                        <p>Консультации специалиста</p>
+                        <p>Оригинальные запчасти</p>
+                        <p>Автомойка высокого класса</p>
+                        <p>Выкуп Вашего авто</p>
+                        <p>Окрас и оклейка авто</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="jqLib.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
